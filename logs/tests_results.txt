@@ -1,0 +1,26 @@
+test_closest (__main__.TestExercice) ... FAIL
+test_coordinates (__main__.TestExercice) ... ERROR
+test_linear_values (__main__.TestExercice) ... ok
+
+======================================================================
+ERROR: test_coordinates (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zakariazair/Desktop/PolyTravail/INF1007/Exercice/c03-ch10-1-exercices-ZakariaZair/test_exercice.py", line 26, in test_coordinates
+    output = exercice.coordinate_conversion(cartesian_coordinates)
+  File "/Users/zakariazair/Desktop/PolyTravail/INF1007/Exercice/c03-ch10-1-exercices-ZakariaZair/exercice.py", line 17, in coordinate_conversion
+    arr = np.append(arr, [[np.sqrt(coord[0] ** 2 + coord[1] ** 2), np.arctan2(coord[1], coord[0])]], 0)
+UnboundLocalError: local variable 'arr' referenced before assignment
+
+======================================================================
+FAIL: test_closest (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/zakariazair/Desktop/PolyTravail/INF1007/Exercice/c03-ch10-1-exercices-ZakariaZair/test_exercice.py", line 42, in test_closest
+    self.assertEqual(
+AssertionError: 0 != 3 : Erreur dans le remplacement de caractère
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1, errors=1)
